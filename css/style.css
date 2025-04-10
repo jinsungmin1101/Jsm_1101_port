@@ -1,0 +1,1001 @@
+    @charset "UTF-8";
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden; /* 가로 스크롤 제거 */
+    }
+
+    /* 웹킷 기반 브라우저 (Chrome, Edge, Safari 등) */
+    body {
+      -ms-overflow-style: none;     /* IE, Edge */
+      scrollbar-width: none;        /* Firefox */
+    }
+    
+    ::-webkit-scrollbar {
+      display: none;                /* Chrome, Safari */
+    }
+    
+  
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.3);
+        z-index: 9999;
+      }
+      
+      nav {
+        width: 100%;
+      }
+      
+      header ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header ul li {
+        padding: 27px 50px;
+        font-family: 'RixYeoljeongdo_Regular';
+      }
+      
+      header ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      /* 햄버거 버튼 (처음엔 안 보임) */
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        color: white;
+        padding: 20px;
+        cursor: pointer;
+        text-align: right;
+      }
+    .section {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .section:nth-of-type(1) {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background: url(../images/sd.png) no-repeat center center;
+        background-size: cover; /* 배경 꽉 채우기 */
+    }
+    
+    /* 비디오 */
+    .section:nth-of-type(1) video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* 영상 짤리지 않게 */
+        object-position: center;
+        z-index: 1; /* 배경 위에 올라오도록 */
+    }
+    
+
+    .ula1 {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        margin: 0;
+        color: white; 
+        padding-top: 150px; 
+        z-index: 1; 
+    }
+
+
+    .ula1 li {
+        margin: 0 240px; 
+        color: white;
+        font-family: 'RixYeoljeongdo_Regular';
+    }
+
+    .ula2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 0;
+        color: white; 
+        padding-top: 150px; 
+        z-index: 1; 
+        position: relative;
+        bottom: 30px;
+        font-family: 'RixYeoljeongdo_Regular';
+    }
+
+
+    .ula2 li {
+        padding-top: 8  0px;
+        margin: 0 240px; 
+        color: white;
+        font-weight: 900;
+    }
+
+    .p2 {
+        background-color: black;
+        background-size: cover;
+        height: 100vh; 
+        position: relative; 
+    }
+
+    .p3{
+        background-color: black;
+        background-size: cover;
+        height: 100vh; 
+        position: relative; 
+    }
+    .p4{
+        background-color: black;
+        background-size: cover;
+        height: 100vh; 
+        position: relative; 
+    }
+    .p5{
+        background-color: black;
+        background-size: cover;
+        height: 100vh; 
+        position: relative; 
+    }
+    .p6{
+        background-color: black;
+        background-size: cover;
+        height: 100vh; 
+        position: relative; 
+    }
+    #jsm{
+        height: 100vh;
+    }
+    #loader {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: black;
+      color: white;
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 1s 2s forwards;
+    }
+    
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+
+    .v1{
+        display: flex;
+        position: relative;
+        top: 30px;
+        right: 80px;
+    }
+
+    .v1 video{
+        width: 20%;
+        height: 20%;
+    }
+    .v2{
+        display: flex;
+        position: relative;
+        top: 30px;
+        right: 80px;
+    }
+
+    .v2 video{
+        width: 20%;
+        height: 20%;
+    }
+    .v3{
+        display: flex;
+        position: relative;
+        top: 30px;
+        right: 80px;
+    }
+
+    .v3 video{
+        width: 20%;
+        height: 20%;
+    }
+
+
+    .v12{
+        position: relative;
+        right: 200px;
+    }
+
+    .v13{
+        position: relative;
+        right: 400px;
+    }
+
+    .v22{
+        position: relative;
+        right: 200px;
+    }
+
+    .v23{
+        position: relative;
+        right: 400px;
+    }
+
+    .v32{
+        position: relative;
+        right: 200px;
+    }
+
+    .v33{
+        position: relative;
+        right: 400px;
+    }
+
+    .v1, .v2, .v3{
+        opacity: 1;
+        transition: all 1s  ;
+    }
+    
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: static;
+      margin-top: -520px;
+      margin-left: -50px;
+    }
+    
+    .profile img {
+      width: 17%;
+      margin-top: 0; /* 기존 50px 제거 가능 */
+    }
+
+    .profile button {
+        background-color: white;
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        position: relative;
+        left: 20px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .interview {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 999;
+        left: 1320px;
+        top: 100px;
+        flex-direction: column;  /* 세로 방향으로 정렬 */
+        padding: 20px;  /* padding 추가하여 내용과 상단 간격 조정 */ 
+    }
+
+    .interview p {
+        background-color: #373737;
+        color: white;
+        padding: 20px 30px;
+        padding-right: 180px;
+        border-radius: 15px;
+        font-size: 1rem;
+        text-align: left;
+        max-width: 80%;
+        margin-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;   
+        line-height: 2rem;
+        font-family: 'Pretendard-Regular';
+    }
+
+    .interview span{
+        font-weight: 800;
+        font-size: 1.3rem;
+        font-family: 'Freesentation-9Black';
+    }
+
+
+    .ve1.on, .ve2.on, .ve3.on, .ve4.on, .ve5.on{
+        position: absolute ; /* 절대 위치로 중앙에 배치 */ 
+        z-index: 10 ;
+        border: 3px solid white;
+        transform: scale(0.8); /* 비율을 유지하며 확대 */
+        transform-origin: center center; /* 중앙을 기준으로 확대 */
+        transition: transform 1s ease ; /* 부드러운 애니메이션 */
+        object-fit: cover ; /* 비율 유지하며 채우기 */
+        width: auto ; /* width를 auto로 설정하여 비율 유지 */
+        height: auto ; /* height를 auto로 설정하여 비율 유지 */
+        bottom: 100px;
+    }
+
+    .ve1.on ~ .ve2, .ve1.on ~ .ve3, .ve1.on ~ .ve4, .ve1.on ~ .ve5 {
+        transform: translateX(450%);
+    }
+    
+  
+    .ve2.on ~ .ve3,
+    .ve2.on ~ .ve4,
+    .ve2.on ~ .ve5 {
+        transform: translateX(350%);
+    }
+
+    .ve3.on ~ .ve4,
+    .ve3.on ~ .ve5 {
+        transform: translateX(250%);
+    }
+
+    .ve4.on ~ .ve5{
+        transform: translateX(130%);
+    }
+    
+    .ve1, .ve2, .ve3, .ve4, .ve5 {
+        transition: all 1s;
+        width: 17%;
+        height: 80%;
+        position: relative;
+        left: 50px;
+        border: 5px solid white;
+        margin-right: 30px;
+    }
+    
+    .ve1 video, .ve2 video, .ve3 video, .ve4 video, .ve5 video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .veg{
+        display: flex;
+        height: 90%;
+        justify-content: center;
+        position: relative;
+        z-index: 21;
+        right: 30px;
+    }
+
+    .ccding{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .codingimg1{
+        margin-right: 150px;
+    }
+
+    .designleft{
+        margin-right: 50px;
+    }
+
+    .designmidtop{
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    .designpage{
+        display: flex;
+    }
+
+    .designmid{
+        margin-right: 50px;
+    }
+
+    .video-info {
+      position: absolute;           /* 부모 위에 겹치게 */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+      opacity: 0;                   /* 안보이게 */
+      transition: opacity 0.3s ease;
+      pointer-events: none;         /* hover 중첩 안되게 */
+      z-index: 2;
+    }
+
+    .designleft,
+.designmidtop,
+.designmidbot,
+.designright {
+  position: relative;
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+}
+    .designleft,
+.designright,
+.designmidtop,
+.designmidbot {
+  position: relative;  /* 💡 이거 추가! */
+}
+    
+    .ve1:hover .video-info,
+    .ve2:hover .video-info,
+    .ve3:hover .video-info,
+    .ve4:hover .video-info,
+    .ve5:hover .video-info{
+        opacity: 1;
+    }
+
+    .ve1.on:hover .video-info,
+    .ve2.on:hover .video-info,
+    .ve3.on:hover .video-info,
+    .ve4.on:hover .video-info,
+    .ve5.on:hover .video-info{
+        opacity: 0 !important
+    }
+
+    
+    .codingimg1 img{
+        height: 800px;
+        width: 600px;
+        object-fit: cover;
+    }
+
+/* codingimg1에 상대적 위치를 설정하여 video-info가 그 위에 올 수 있도록 함 */
+.codingimg1 {
+    position: relative;
+}
+
+/* codingimg1에 호버 시 video-info가 보이도록 설정 */
+.codingimg1:hover .video-info {
+    opacity: 1;
+}
+
+    .codingimg2 img{
+        height: 800px;
+        width: 600px;
+        object-fit: cover;
+    }
+
+/* codingimg1에 상대적 위치를 설정하여 video-info가 그 위에 올 수 있도록 함 */
+.codingimg2 {
+    position: relative;
+}
+
+/* codingimg1에 호버 시 video-info가 보이도록 설정 */
+.codingimg2:hover .video-info {
+    opacity: 1;
+}
+
+    .designleft{
+        height: 800px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .designleft{
+        position: relative;
+    }
+
+    .designleft:hover .video-info{
+        opacity: 1;
+    }
+
+    .designmidtop{
+        height: 400px;
+        width: 1000px;
+        position: relative;
+    }
+
+    .designmidtop:hover .video-info{
+        opacity: 1;
+    }
+
+    .designmidbot{
+        position: relative;
+        bottom: 100px;
+        height: 400px;
+        width: 1000px;
+    }
+
+    .designmidbot:hover .video-info{
+        opacity: 1;
+    }
+
+    .designright{
+        position: relative;
+        height: 800px;
+        width: 400px;
+    }
+
+    .designright:hover .video-info{
+        opacity: 1;
+    }
+
+.skil{
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.skil img{
+    width: 25%;
+    height: 30%;
+}
+
+.c-b{
+    padding: 20px;
+    border-radius: 35px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px auto;
+
+}
+
+.ending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/sd.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .ending img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+
+
+@font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RixYeoljeongdo_Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  /* 페이지2 (About) 레이아웃 */
+  .page2a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .ula1 {
+    display: none;
+  }
+
+  .skil {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .skil img {
+    width: 50%;
+    height: auto;
+  }
+
+  .profile {
+    position: static;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile img {
+    width: 70%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .profile button {
+    font-size: 1rem;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-right: 0;
+    position: static;
+  }
+
+  .interview {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .interview p {
+    font-size: 0.95rem;
+    padding: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    line-height: 1.8rem;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .interview span {
+    font-size: 1.2rem;
+  }
+
+  .p2 {
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 100px;
+  }
+
+  /* 🎥 영상 페이지 반응형 */
+  .veg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .ve1, .ve2, .ve3, .ve4, .ve5 {
+    width: 100%;
+    height: auto;
+    max-width: 95vw;
+    margin: 0 auto;
+    transition: all 0.4s ease;
+    position: relative;
+  }
+
+  .ve1 video, .ve2 video, .ve3 video, .ve4 video, .ve5 video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .ve1.on,
+  .ve2.on,
+  .ve3.on,
+  .ve4.on,
+  .ve5.on {
+    width: 100vw;
+    max-width: 100%;
+    transform: none;
+    z-index: 10;
+  }
+
+  .ve1.on ~ .ve2,
+  .ve1.on ~ .ve3,
+  .ve1.on ~ .ve4,
+  .ve1.on ~ .ve5,
+  .ve2.on ~ .ve3,
+  .ve2.on ~ .ve4,
+  .ve2.on ~ .ve5,
+  .ve3.on ~ .ve4,
+  .ve3.on ~ .ve5,
+  .ve4.on ~ .ve5 {
+    transform: none;
+    opacity: 1;
+  }
+
+  .video-info {
+    z-index: 5 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+
+  .ula2 {
+    font-size: 1.5rem;
+    padding-top: 80px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+  }
+
+  /* 🧱 클론 코딩 */
+  .ccding {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  .codingimg1,
+  .codingimg2 {
+    margin: 0;
+    width: 90%;
+  }
+
+  .codingimg1 img,
+  .codingimg2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .c-b {
+    padding: 12px 30px;
+    font-size: 0.95rem;
+  }
+
+  /* 🎨 디자인 페이지 */
+  .p6 {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .designpage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "left right"
+      "mid mid";
+    margin-top: 20px;
+    margin-bottom: -200px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .designleft {
+    grid-area: left;
+    width: 100%;
+  }
+
+  .designright {
+    grid-area: right;
+    width: 100%;
+  }
+
+  .designleft img,
+  .designright img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .designmid {
+    grid-area: mid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -300px;
+    gap: 0px;
+  }
+
+  .designmidtop,
+  .designmidbot {
+    width: 100%;
+  }
+
+  .designmidtop img,
+  .designmidbot img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
+  .p5{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    background-size: cover; /* 배경 꽉 채우기 */
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-container .video-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .image-container:hover .video-info {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .fade-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+  }
+  
+  .fade-item.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skil {
+    margin-top: 70px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .skill-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 60px;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px; /* 👉 기존 100px → 120px */
+  }
+  
+  .skill-item img {
+    width: 100px;  /* 👉 기존 80px → 100px */
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item span {
+    margin-top: 12px;
+    font-size: 17px; /* 글씨도 살짝 키움 */
+    font-weight: bold;
+    color: white;
+  }
+  
+  .skill-item:hover img {
+    transform: scale(1.1);
+  }
+
+  
+  .skill-item {
+    position: relative;
+  }
+  
+  .circle-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+    z-index: 0; /* 이미지 아래로 설정 */
+  }
+  
+  .skill-item img {
+    position: relative;
+    z-index: 1; /* 이미지가 SVG보다 위로 오도록 설정 */
+  }
+  
+  .skill-item {
+    position: relative;
+  }
+  
+  .circle-svg {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+    z-index: 0; /* 이미지 아래로 설정 */
+  }
+  
+  .skill-item img {
+    position: relative;
+    z-index: 1; /* SVG보다 이미지가 위로 올라오게 설정 */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .ve1:hover .video-info,
+    .ve2:hover .video-info,
+    .ve3:hover .video-info,
+    .ve4:hover .video-info,
+    .ve5:hover .video-info {
+      opacity: 0 !important;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .p3,
+    .p4 {
+      height: auto !important;
+      min-height: 100vh;
+      padding-bottom: 100px;
+    }
+  }
